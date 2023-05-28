@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.beru.controller.PrincipalController">
+   <children>
+      <Separator layoutX="297.0" orientation="VERTICAL" rotate="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <VBox fx:id="playerContent" layoutY="6.0" prefHeight="200.0" prefWidth="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <VBox fx:id="enemyContent" layoutX="500.0" prefHeight="200.0" prefWidth="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fx:id="fight" fitHeight="100.0" fitWidth="100.0" layoutX="250.0" layoutY="150.0" onMouseClicked="#fight" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Games/rock-paper-scissors/src/main/resources/images/vs.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="counter" alignment="CENTER" layoutX="264.0" prefHeight="28.0" prefWidth="100.0" text="Counter" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Impact" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="281.0" layoutY="363.0" mnemonicParsing="false" onAction="#connect" text="Join" AnchorPane.bottomAnchor="5.0" />
+      <Label fx:id="playerPoints" alignment="CENTER" layoutX="250.0" layoutY="123.0" prefHeight="26.0" prefWidth="64.0" text="0">
+         <font>
+            <Font name="Arial" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="enemyPoints" alignment="CENTER" layoutX="308.0" layoutY="166.0" prefHeight="26.0" prefWidth="64.0" text="0">
+         <font>
+            <Font name="Arial" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
